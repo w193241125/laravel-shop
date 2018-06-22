@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Models\UserAddress;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UserAddressRequest extends FormRequest
@@ -52,5 +53,6 @@ class UserAddressRequest extends FormRequest
             'contact_phone' => '电话',
         ];
     }
+
 
 }
