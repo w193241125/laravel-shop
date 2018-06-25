@@ -68,7 +68,7 @@ return [
      */
     'upload' => [
         //这个对应 filesystem.php 中的 disks
-        'disk' => 'admin',
+        'disk' => 'public',
 
         'directory' => [
             'image' => 'images',
