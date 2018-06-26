@@ -6,7 +6,7 @@ use App\Models\ProductSku;
 
 class AddCartRequest extends Request
 {
-    
+
     /**
      * Get the validation rules that apply to the request.
      *
