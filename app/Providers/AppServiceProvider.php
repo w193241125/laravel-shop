@@ -44,6 +44,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton('alipay', function () {
             $config = config('pay.alipay');
 //            $config['notify_url'] = route('payment.alipay.notify');
+            //这个回调仅用于测试
             $config['notify_url'] = 'http://requestbin.fullcontact.com/1asv2cv1';
             $config['return_url'] = route('payment.alipay.return');
 
@@ -61,7 +62,8 @@ class AppServiceProvider extends ServiceProvider
         //往服务容器中注入 wechat_pay 的单例对象
         $this->app->singleton('wechat_pay', function () {
             $config = config('pay.wechat');
-            $config = config('pay.wechat');
+            //$config['notify_url'] = route('payment.wechat.notify');
+            //这个回调仅用于测试
             $config['notify_url'] = 'http://requestbin.fullcontact.com/1asv2cv1';
 
             if (app()->environment() !== 'production') {
